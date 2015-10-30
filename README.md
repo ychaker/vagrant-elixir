@@ -59,15 +59,15 @@ vagrant up --provision
 ### Package & Add Vagrant Box
 
 ```
-vagrant package --output pkg/[name-of-box]
-vagrant box add --name [name-of-box] pkg/[name-of-box]
+vagrant package --output pkg/[name-of-box].box
+vagrant box add --name [name-of-box] pkg/[name-of-box].box
 ```
 
 **Example:**
 
 ```
-vagrant package --output pkg/elixir
-vagrant box add --name elixir pkg/elixir
+vagrant package --output pkg/elixir.box
+vagrant box add --name elixir pkg/elixir.box
 ```
 
 ### Double check
