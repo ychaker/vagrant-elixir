@@ -1,0 +1,14 @@
+---
+# Basics
+- hosts: all
+  sudo: true
+  roles:
+    - base
+    - vim
+
+
+# Elixir
+- hosts: all
+  sudo: true
+  roles:
+    - elixir

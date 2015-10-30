@@ -1,0 +1,7 @@
+---
+target:       virtualbox
+path:         /vagrant
+
+user_name:      '{{ "vagrant" if target == "virtualbox" else app_name }}'
+group_name:     '{{ user_name }}'
+user_home_path: '/home/{{ user_name }}'
