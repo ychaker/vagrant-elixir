@@ -90,3 +90,14 @@ ubuntu/trusty64 (virtualbox, 14.04)
 
 ### Use Vagrant Box
 
+Use the box by pointing to it in you `Varantfile`. You an update an existing `Vagrantfile` by changing this line:
+
+```
+config.vm.box = "ubuntu/trusty64"
+```
+
+to point to the box, or by initializing a new Vagrant setup by running the `init` command:
+
+```
+vagrant init ychaker/elixir; vagrant up --provider virtualbox
+```
